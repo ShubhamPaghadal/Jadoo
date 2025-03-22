@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+   <!--  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -25,7 +31,7 @@
         <div class="header-main-section">
           <div class="header-main-menu">
             <div class="header-logo">
-              <img src="IMG/Jadoo-header-logo.png" alt="" />
+              <img class="header-jadoo-img" src="IMG/Jadoo-header-logo.png" alt="" />
             </div>
             <div class="header-menu">
               <a href="" class="header-list">Destinations</a>
@@ -41,6 +47,7 @@
                 </select>
               </div>
             </div>
+            <button onclick="navigation()" class="toggle-btn"><i class="fas fa-bars"></i></button>
           </div>
         </div>
 
@@ -185,7 +192,7 @@
             </div>
           </div>
           <div class="destination--images">
-            <div class="destination-main-img">             
+            <!-- <div class="destination-main-img">             
               <img class="des-img" src="IMG/dec-1.png" alt="" />
               <div class="des-name-price-days">
                 <div class="place-name-price">
@@ -223,7 +230,7 @@
                   <p class="destination-day">10 days</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -245,7 +252,7 @@
                             </div>
                             <div class="choose-info">
                                 <p class="des-info">Choose Destination</p>
-                                <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                                <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                             </div>
                          
                         </div>
@@ -255,7 +262,7 @@
                             </div>
                             <div class="choose-info">
                                 <p class="des-info">Choose Destination</p>
-                             <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                             <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                             </div>
                         </div>
                         <div class="selet-des">
@@ -264,7 +271,7 @@
                             </div>
                             <div class="choose-info">
                                 <p class="des-info">Choose Destination</p>
-                             <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                             <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                             </div>
                         </div>
                     </div>
@@ -396,9 +403,7 @@
     </div>
     <!--************************************** END section-7*************************************************** -->
 
-    
-
-
+  
     <footer>
         <div class="container">
             <div class="fotter-main-section">
@@ -481,6 +486,69 @@
      // dots: false, Boolean
     // arrows: false, Boolean
   }); -->
+
+
+  <script>
+  const navigation = () => {
+    const navbar = document.querySelector('.header-menu')
+    navbar.classList.toggle('active')
+    if(navbar.style.display === "none"){
+      navbar.style.display = "block"
+    }
+  else{
+    navbar.style.display ="none"
+  }
+}
+
+const all_area = [
+  {
+    img: 'IMG/dec-1.png',
+    tittle: 'Rome, Itali',
+    price: '$5.42K',
+    days: '10 days'
+  },
+  {
+    img: 'IMG/dec-2.jpg',
+    tittle: 'London, UK',
+    price: '$4.2k',
+    days: '12 Days Trip'
+  },
+  {
+    img: 'IMG/dec-3.png',
+    tittle: 'Full Europe',
+    price: '$15K',
+    days: '28 Days Trip'
+  }
+]
+
+const get_item = document.querySelector('.destination--images')
+  all_area.map(item => {
+    get_item.innerHTML +=    
+           `
+             <div class="destination-main-img">             
+              <img class="des-img" src=${item.img} alt="" />
+              <div class="des-name-price-days">
+                <div class="place-name-price">
+                  <p class="des-name">${item.tittle}</p>
+                  <p class="price">${item.price}</p>
+                </div>
+                <div class="trip-day">
+                 
+                  <p class="destination-day">${item.days}</p>
+                </div>
+              </div>
+            </div>`
+  })
+
+// const place_arr = [
+//   {
+//     img: dsfsd,
+//   }
+// ]
+
+// const mapping = document.querySelector('.destination--images')
+// console.log('mapping')
+
  </script>
   </body>
 </html>
