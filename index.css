@@ -439,6 +439,99 @@ p.all-rights {
   padding-bottom: 50px;
 }
 }
+
+
+/* 412 */
+@media (max-width: 412px){
+  .fotter-main-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 166px 126px 0 139px;
+    flex-direction: column;
+}
+.footer-heading {
+  max-width: 100%;
+  padding-right: 0;
+  text-align: center;
+}
+.company-all- {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  column-gap: 91px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+}
+.copany-social-media-app {
+  width: 25%;
+  margin-left: 122px;
+}
+.comapny-social-media {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-list {
+  padding: 50px 0 50px 0;
+}
+.comapny-contact {
+  padding-bottom: 50px;
+}
+.company-list {
+  padding-bottom: 50px;
+}
+}
+
+/* 425 */
+@media (max-width: 425px){
+  .fotter-main-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 166px 126px 0 139px;
+    flex-direction: column;
+}
+.footer-heading {
+  max-width: 100%;
+  padding-right: 0;
+  text-align: center;
+}
+.company-all- {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  column-gap: 91px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+}
+.copany-social-media-app {
+  width: 25%;
+  margin-left: 122px;
+}
+.comapny-social-media {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-list {
+  padding: 50px 0 50px 0;
+}
+.comapny-contact {
+  padding-bottom: 50px;
+}
+.company-list {
+  padding-bottom: 50px;
+}
+}
 /* 1200px  */
 @media (max-width: 1200px){
   .fotter-main-section {
@@ -454,6 +547,19 @@ p.all-rights {
     padding: 166px 0 0 0;
     max-width: 100%;
   }
+}
+
+/* 834 */
+@media (max-width: 834px){
+  .fotter-main-section {
+    flex-wrap: wrap;
+  }
+  .copany-social-media-app {
+    margin-top: 58px;
+}
+}
+p.all-rights {
+  margin-top: 41px;
 }
 /********************************* END  footer ************************************/
 
@@ -819,6 +925,17 @@ p.customization-text {
   }
 }
 
+/* 834px */
+@media (max-width: 834px){
+ 
+.searvice-list {
+  width: 35%;
+}
+.bottom-row-2 {
+  flex-wrap: wrap;
+}
+}
+
 
 @media only screen and (max-width: 767px){
   .searvice-list {
@@ -917,6 +1034,27 @@ h1.des-top-text {
   font-size: 22px;
   }
 }
+
+/* 834px */
+
+@media (max-width: 834px){
+  .destination--images {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  .destination-main-img {
+    width: 70%;
+  }
+  img.des-img {
+    width: 100%;
+    height: 395px;
+    
+  }
+  .place-name-price{
+    justify-content: space-between
+  }
+}
+/* 767px */
 @media only screen and (max-width: 767px){
   .destination--images {
     row-gap: 117px;
@@ -1135,12 +1273,18 @@ p.travel-top-text {
 .travel-trip-booking {
   gap: 76px;
 }
-
+h1.next-bokk-trip {
+  width: 419px !important;
+}
+.status-bg-im {
+  right: -159px !important;
+}
 
 .book-step {
-width: 34% !important;
+  width: 46% !important;
 }
 }
+
 /* 1024px */
 @media (max-width: 1024px){
   h1.next-bokk-trip {
@@ -1152,7 +1296,7 @@ width: 34% !important;
 }
 
 .book-step {
-  width: 39%;
+  width: 47%;
 }
 }
 /* 1280px */
@@ -1180,6 +1324,15 @@ width: 34% !important;
   right: -171px;
 }
 }
+
+/* 1280px */
+
+@media (max-width: 1280px){
+  .travel-trip-booking {
+    gap: 2px;
+}
+}
+
 /* 767px */
  @media only screen and (max-width: 767px){
   .book-step {
@@ -1191,6 +1344,80 @@ width: 34% !important;
 }
  }
 
+ /* 412px */
+ @media (max-width: 412px){
+  .selet-des{
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  h1.next-bokk-trip{
+    width: 100% !important;
+    text-align: center;
+    font-size: 22px;
+  }
+  p.easy-text {
+    text-align: center;
+  }
+  .trip-view {
+    width: 100% !important;
+}
+.ongoing-status {
+  right: -6px;
+  bottom: -112px;
+  width: 80%;
+
+}
+.status-bg-im {
+  right: 0 !important;
+} 
+ }
+
+
+ /* 425px */
+ @media (max-width: 425px){
+  .selet-des{
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  h1.next-bokk-trip{
+    width: 100% !important;
+    text-align: center;
+    font-size: 22px;
+  }
+  p.easy-text {
+    text-align: center;
+  }
+  .trip-view {
+    width: 100% !important;
+}
+.ongoing-status {
+  right: -6px;
+  bottom: -112px;
+  width: 80%;
+
+}
+.status-bg-im {
+  right: 0 !important;
+} 
+ }
+ /* 834px */
+ @media (max-width: 834px){
+  
+.travel-trip-booking{
+  flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    row-gap: 60px;
+}
+.book-step {
+  width: 100% !important;
+}
+.trip-view{
+  width: 50%;
+}
+ }
 /*************************************** END section-4********************************************** */
 /***************************************  section-6********************************************** */
 .slick-slider {
@@ -1220,6 +1447,13 @@ width: 34% !important;
     justify-content: center;
     flex-direction: column;
   
+  }
+}
+
+/* 834 */
+@media (max-width: 834px){
+  .slick-slider{
+    flex-wrap: wrap;
   }
 }
 /*************************************** END section-6********************************************** */
@@ -1287,6 +1521,9 @@ p.name-reviewver {
   row-gap: 82px;
   align-items: center;
 }
+h1.peoplw-header {
+  width: 100%;
+}
 
 }
 /* media query */
@@ -1315,7 +1552,39 @@ p.reviwver-location {
   text-align: center
 }
 
+}
 
+/* 412px */
+@media (max-width: 412px){
+  h1.peoplw-header {
+    font-size: 22px;
+    width: 85% !important;
+  }
+}
+/* 1024px */
+@media (max-width: 1024px){
+  h1.peoplw-header {
+    width: 350px;
+}
+}
+
+/* 834px */
+@media (max-width: 834px){
+  .main-sec-5{
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center;
+    justify-content: c
+    ;
+  }
+  h1.peoplw-header{
+    width: 64%;
+  }
+  .img-and-people-ask{
+    width: 85%;
+    padding: 28px 35px 0 34px;
+
+  }
 }
 /*************************************** END section-5********************************************** */
 
@@ -1401,9 +1670,10 @@ button.sub-btn {
   
 }
 /* media query */
-@media (max-width : 312px){
+
+/* 412px */
+@media (max-width: 412px){
   .main-in-field {
-    width: 1170px;
     background: #e5dfdf;
     /* padding: 79px 144px 0 145px; */
     padding: 0;
@@ -1411,7 +1681,7 @@ button.sub-btn {
     border-radius: 80px 10px 10px 10px;
 }
 p.info-em-sub {
-  font-size: 16px;
+  font-size: 16px !important ;
   font-weight: 600;
   line-height: 28px;
   text-align: center;
@@ -1428,8 +1698,8 @@ p.info-em-sub {
 }
 
 input.in-email {
-  width: 90%;
-  height: 44px;
+  width: 90% !important;
+  height: 44px !important;
   color: #39425D;
   font-size: 14px;
   font-weight: 400;
@@ -1448,8 +1718,147 @@ input.in-email {
   /* align-items: center; */
 }
 button.sub-btn {
-  width: 90%;
-  height: 47px;
+  width: 90% !important;
+  height: 47px !important;
+  background-color: #FF946D;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-left: 13px;
+}
+.input-sec {
+  flex-direction: column;
+}
+.start-deco {
+  position: absolute !important;
+  right: -10px !important;
+  bottom: -58px !important;
+  z-index: 1 !important;
+  max-width: 33% !important;
+}
+
+
+}
+
+/* 412px */
+@media (max-width: 425px){
+  .main-in-field {
+    background: #e5dfdf;
+    /* padding: 79px 144px 0 145px; */
+    padding: 0;
+    position: relative;
+    border-radius: 80px 10px 10px 10px;
+}
+p.info-em-sub {
+  font-size: 16px !important ;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: #5E6282;
+  padding-top: 45px;
+}
+.input-sec {
+  padding: 31px 0 32px 0;
+  text-align: center;
+  /* display: flex
+; */
+  justify-content: center;
+  /* gap: 24px; */
+}
+
+input.in-email {
+  width: 90% !important;
+  height: 44px !important;
+  color: #39425D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  border: none;
+  border-radius: 5px;
+  padding-left: 69px;
+}
+.email-logo {
+  position: absolute;
+  top: 12px;
+  left: 33px;
+  /* display: flex
+; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+button.sub-btn {
+  width: 90% !important;
+  height: 47px !important;
+  background-color: #FF946D;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-left: 13px;
+}
+.input-sec {
+  flex-direction: column;
+}
+.start-deco {
+  position: absolute !important;
+  right: -10px !important;
+  bottom: -58px !important;
+  z-index: 1 !important;
+  max-width: 33% !important;
+}
+
+
+}
+/* 312px */
+@media (max-width : 312px){
+  .main-in-field {
+    background: #e5dfdf;
+    /* padding: 79px 144px 0 145px; */
+    padding: 0;
+    position: relative;
+    border-radius: 80px 10px 10px 10px;
+}
+p.info-em-sub {
+  font-size: 16px !important ;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: #5E6282;
+  padding-top: 45px;
+}
+.input-sec {
+  padding: 31px 0 32px 0;
+  text-align: center;
+  /* display: flex
+; */
+  justify-content: center;
+  /* gap: 24px; */
+}
+
+input.in-email {
+  width: 90% !important;
+  height: 44px !important;
+  color: #39425D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  border: none;
+  border-radius: 5px;
+  padding-left: 69px;
+}
+.email-logo {
+  position: absolute;
+  top: 12px;
+  left: 33px;
+  /* display: flex
+; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+button.sub-btn {
+  width: 90% !important;
+  height: 47px !important;
   background-color: #FF946D;
   border: none;
   border-radius: 6px;
@@ -1490,5 +1899,30 @@ button.sub-btn {
     bottom: -69px;
     z-index: -1;
 }
+}
+
+/* 834px */
+@media (max-width: 834px){
+  .email-logo {
+    bottom: 13px;
+  }
+  input.in-email {
+    width: 348px;
+    height: 53px;
+  }
+  button.sub-btn {
+    width: 23%;
+    height: 50px;
+  }
+}
+
+/* 767px */
+@media (max-width: 767px){
+  p.info-em-sub {
+    font-size:25px ;
+  }
+  input.in-email {
+    width: 297px;
+  }
 }
 /*************************************** END section-7********************************************** */
