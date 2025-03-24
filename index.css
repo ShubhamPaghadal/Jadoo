@@ -103,6 +103,7 @@
     /* Container */
     img.header-jadoo-img {
       max-width: 1440px;
+      cursor: pointer;;
   }
 
     .container {
@@ -243,6 +244,7 @@ a.header-list {
 @media (max-width: 320px){
   .header-main-menu {
     justify-content: center;
+    position: relative;
 }
 .header-menu {
   gap: 31px;
@@ -252,12 +254,48 @@ a.header-list {
 
 @media (max-width: 999px){
   .header-menu {
-    display: none;
+    display: none; /* Initially hidden */
+    /* transition-timing-function: ease;  */
+    transition: width  2s ease;
+    position: absolute;
+    top: 97px;
+    width: 97%;
+    background-color: rgba(241, 165, 1, 0.98);
+    justify-content: center;
+    align-items: center;
   }
   
   button.toggle-btn {
     display: block;
   }
+ 
+  a.header-list {
+    color: #212835;
+    font-size: 17px;
+    line-height: 100%;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 29px;
+    margin-top: 21px;
+}
+.header-login-btn {
+  width: 100%;
+  text-align: center;
+}
+.header-language {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.sign-up-btn {
+  width: 100%;
+  text-align: center;
+  padding: 31px 0 31px;
+}
+
 
 }
 /* 834px */
@@ -1422,19 +1460,57 @@ h1.next-bokk-trip {
 /***************************************  section-6********************************************** */
 .slick-slider {
   display: flex;
+  width: calc(89px * 18);
   align-items: center;
   gap: 77px;
   justify-content: center;
+  animation: scroll  20s linear infinite ;
   
 }
+.main-sec-6 {
+  margin: 100px 0 100px 0;
+}
+.section-6{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
+}
+@keyframes scroll {
+  0%{
+      transform: translateX(10);
+  }
+  100%{
+      transform: translateX(calc(-100px * 10));
+  }
+  
+}
+img.all-com-logo {
+  
+  transition: transform 1s;
+}
+img.all-com-logo:hover{
+  transform: translateZ(20px);
+}
+
+
 .com-logo-1 {
   filter: grayscale(1);
 }
 .com-logo-1:hover {
   filter: unset;
 }
-.main-sec-6 {
-  margin-bottom: 111px;
+
+.container-com-logo{
+    /* height: 350px; */
+    margin: 0 auto;
+    /* position: relative; */
+    display: grid;
+    /* place-items: center; */
+    width: 100%;
+    max-width: 1040px;
+    display: block;
+    overflow: hidden;
 }
 
 /* media query  */
@@ -1463,7 +1539,7 @@ h1.next-bokk-trip {
 .main-sec-5 {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 96px;
+  
 }
 p.testination {
   font-size: 18px;
@@ -1632,6 +1708,7 @@ input.in-email {
   position: absolute;
   bottom: 20px;
   left: 35px;
+  cursor: pointer;
 }
 button.sub-btn:hover {
   background-color: #FF7D68;
@@ -1650,6 +1727,7 @@ button.sub-btn {
   position: absolute;
   top: -26px;
   right: -30px;
+  cursor: pointer;
 }
 .start-deco {
   position: absolute;
