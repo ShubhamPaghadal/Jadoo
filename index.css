@@ -263,6 +263,7 @@ a.header-list {
     background-color: rgba(241, 165, 1, 0.98);
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
   
   button.toggle-btn {
@@ -439,10 +440,15 @@ p.all-rights {
 
 @media (max-width: 312px){
   .fotter-main-section {
+    padding: 100px 0 0 0 !important; 
     display: flex;
     justify-content: space-around;
     padding: 166px 126px 0 139px;
     flex-direction: column;
+}
+.copany-social-media-app {
+  width: 25%;
+  margin-left: 98px !important;
 }
 .footer-heading {
   max-width: 100%;
@@ -450,8 +456,7 @@ p.all-rights {
   text-align: center;
 }
 .company-all- {
-  display: flex
-;
+  display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 91px;
@@ -466,6 +471,7 @@ p.all-rights {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .company-list {
   padding: 50px 0 50px 0;
@@ -476,6 +482,17 @@ p.all-rights {
 .company-list {
   padding-bottom: 50px;
 }
+img.play-store-logo {
+  max-width: 317%;
+}
+img.app-store-logo {
+  max-width: 317%;
+}
+.company-app-avalible {
+  flex-direction: column;
+  margin-top: 26px;
+}
+
 }
 
 
@@ -804,6 +821,16 @@ img.girl-main {
   img.girl-main{
     margin: 31px 0 0 0px !important; 
   }
+
+  button.find-more-btn {
+    width: 133px;
+    height: 49px;
+}
+img.video-play-img {
+  cursor: pointer;
+  padding-top: 19px;
+  width: 50%;
+}
 }
 
 /* 412px */
@@ -826,7 +853,7 @@ img.girl-main {
   position: absolute;
   top: 42px !important;
   right: -10px !important;
-  z-index: 1;
+  z-index: -1;
 }
 img.girl-main {
   max-width: 100%;
@@ -1300,6 +1327,10 @@ p.complete-status {
     bottom: -114px;
 
 }
+.travel-trip-booking {
+  margin-top: 91px;
+}
+
 
 }
 
@@ -1626,6 +1657,9 @@ p.name-reviewver {
 }
 p.reviwver-location {
   text-align: center
+}
+.main-sec-5 {
+  row-gap: 100px !important;
 }
 
 }
